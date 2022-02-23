@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
         }
 
         //This function plays placement sound.
-        Audio('./media/tin.mp3');
+        audio('./media/tin.mp3');
         //This condition checks to see if it is computers turn.
         if(activePlayer === 'O'){
             //This function disables clicking for computer choice.
@@ -106,7 +106,7 @@ function checkWinConditions() {
     //squares are selected the code executes.
     else if (selectedSquares.length >= 9) {
         //This function playes the tie game sound.
-        Audio('./media/glasses_down.mp3');
+        audio('./media/glasses_down.mp3');
         // This function sets a .3 second timer before the resetGame is called.
         setTimeout(function () { resetGame(); }, 1000); 
     }
